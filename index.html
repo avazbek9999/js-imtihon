@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="user-section">
+        <div class="container">
+            <ul class="user_list">
+                <h1 class="users_headding">Users</h1>
+            </ul>
+            <ul class="post_list">
+                <h1 class="post_headding">Posts</h1>
+            </ul>
+            <ul class="comment_list">
+                <h1 class="commments_headding">Comments</h1>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- user template -->
+    <template class="user_template">
+        <li class="user">
+            <p class="user__id">id</p>
+            <h3 class="user__name">name</h3>
+            <p class="user__email">email</p>
+            <p class="user__adress">adress</p>
+            <a
+               class="user__adress__link"
+               target="__blank"
+               href="https://www.google.com/maps/place/-37.3159,81.1496"
+            >location</a>
+            <p class="user__phone">phone</p>
+            <p class="user__website">website</p>
+            <h4 class="user__company__name">name</h4>
+            <p class="user__company__catchPhrase">catchPhrase</p>
+            <p class="user__company__bs">bs</p>    
+        </li>
+    </template>
+
+    <!-- post template -->
+    <template class="post_template">
+        <li class="post">
+            <p class="post_user_id">1</p>
+            <p class="post__id">1</p>
+            <h3 class="poat__title">title</h3>
+            <p class="post__body">body</p>
+        </li>
+    </template>
+
+    <!-- comments template -->
+    <template class="comment_template">
+        <li class="comment">
+            <p class="post_id">1</p>
+            <h4 class="comment__name">name</h4>
+            <span class="commet__gmail">email</span>
+            <p class="comment__body">body</p>
+        </li>
+    </template>
+
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
